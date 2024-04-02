@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anim_text {
+    font-size: 3rem;
+    font-weight: 500;
+    white-space: normal;
+    overflow: hidden;
+}
+
+.highlight {
+    display: inline-block;
+    width: 150px;
+    white-space: nowrap;
+    animation: typewriter 3.5s steps(25) infinite alternate,
+               blink 900ms steps(25) infinite normal;
+    border-right: 5px solid black;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 21%;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: black;
+    }
+    to {
+        border-color: #ffffff;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="anim_text">
+        seamless learning for <span class="highlight">brighter future</span>
+    </div>
+    <img src="" alt="">
+    
+</body>
+</html>
